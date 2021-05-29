@@ -1,0 +1,27 @@
+# Maintainer: dgnet <dgnet@dgnet.com>
+# Contributor: andriy <andriy@dgnet.cloud>
+
+pkgname=nocache
+pkgver=0.0.1
+pkgrel=2
+pkgdesc=""
+arch=('')
+url=""
+license=('')
+depends=()
+source=("")
+sha1sums=('')
+
+build() {
+#   cd "$srcdir/$pkgname-$pkgver"
+
+#   ./configure --prefix=/usr
+#   make
+# }
+
+# package() {
+#   cd "$srcdir/$pkgname-$pkgver"
+#   make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
