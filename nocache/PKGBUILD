@@ -12,7 +12,6 @@ depends=()
 source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
 #sha1sums=('')
 # all three of these are different
-MD5SUMS("SKIP")
 md5sums("SKIP")
 md5sums=('SKIP')
 
