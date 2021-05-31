@@ -11,6 +11,7 @@ license=('')
 depends=()
 source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
 #sha1sums=('')
+md5sums('SKIP')
 
 # https://wiki.archlinux.org/title/creating_packages
 build() {
@@ -27,4 +28,4 @@ package() {
 }
 
 # vim:set ts=2 sw=2 et:
-md5sums=('95ed675fd0fa273c737ba7457ba37452')
+#md5sums=('95ed675fd0fa273c737ba7457ba37452')
