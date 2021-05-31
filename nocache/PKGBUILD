@@ -12,19 +12,16 @@ depends=()
 source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
 sha1sums=('')
 
+# https://wiki.archlinux.org/title/creating_packages
 build() {
-    cd "$srcdir/$pkgname-$pkgver"
-
-    ls ./
-
+  cd "$srcdir/$pkgname-$pkgver"
 #   ./configure --prefix=/usr
-#   make
+  make
 }
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"
-  #make DESTDIR="$pkgdir" install
-  ls ./
+  make DESTDIR="$pkgdir" install
 }
 
 # vim:set ts=2 sw=2 et:
