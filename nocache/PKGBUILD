@@ -9,7 +9,7 @@ arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
 url=""
 license=('')
 depends=()
-source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
+source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Program_nocache.git")
 #sha1sums=('')
 # all three of these are different
 md5sums=('SKIP')
