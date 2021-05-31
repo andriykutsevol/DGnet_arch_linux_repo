@@ -10,7 +10,7 @@ url=""
 license=('')
 depends=()
 source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
-sha1sums=('')
+#sha1sums=('')
 
 # https://wiki.archlinux.org/title/creating_packages
 build() {
