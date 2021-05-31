@@ -21,9 +21,10 @@ build() {
 #   make
 }
 
-# package() {
-#   cd "$srcdir/$pkgname-$pkgver"
-#   make DESTDIR="$pkgdir" install
-#}
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  #make DESTDIR="$pkgdir" install
+  ls ./
+}
 
 # vim:set ts=2 sw=2 et:
