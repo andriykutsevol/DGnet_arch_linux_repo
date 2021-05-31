@@ -11,7 +11,10 @@ license=('')
 depends=()
 source=("https://github.com/andriykutsevol/DGnet_Program_nocache.git")
 #sha1sums=('')
-md5sums('SKIP')
+# all three of these are different
+MD5SUMS("SKIP")
+md5sums("SKIP")
+md5sums=('SKIP')
 
 # https://wiki.archlinux.org/title/creating_packages
 build() {
