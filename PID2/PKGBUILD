@@ -11,8 +11,7 @@ url=""
 license=('')
 depends=()
 source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Program_nocache.git")
-#sha1sums=('')
-# all three of these are different
+
 md5sums=('SKIP')
 
 # https://wiki.archlinux.org/title/creating_packages
