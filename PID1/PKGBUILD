@@ -1,0 +1,27 @@
+# Maintainer: dgnet <dgnet@dgnet.com>
+# Contributor: andriy <andriy@dgnet.cloud>
+
+pkgname=nocache
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="The golang program to manage DGnet_Dist_PIDX repositories throug the GitHub API"
+# arm (armv5), armv6h (armv6 hardfloat), armv7h (armv7 hardfloat) and aarch64 (armv8 64-bit).
+arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
+url=""
+license=('')
+depends=()
+source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Program_nocache.git")
+#sha1sums=('')
+# all three of these are different
+md5sums=('SKIP')
+
+# https://wiki.archlinux.org/title/creating_packages
+build() {
+  cd "$srcdir/$pkgname"
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  make DESTDIR="$pkgdir" install
+}

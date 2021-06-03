@@ -5,6 +5,7 @@ pkgname=nocache
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="minimize filesystem caching effects"
+# arm (armv5), armv6h (armv6 hardfloat), armv7h (armv7 hardfloat) and aarch64 (armv8 64-bit).
 arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
 url=""
 license=('')
