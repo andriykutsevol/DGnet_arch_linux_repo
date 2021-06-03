@@ -11,17 +11,25 @@ url=""
 license=('')
 depends=()
 source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Program_nocache.git")
-#sha1sums=('')
-# all three of these are different
+
 md5sums=('SKIP')
 
 # https://wiki.archlinux.org/title/creating_packages
 build() {
   cd "$srcdir/$pkgname"
-  make
+  # make
+  # [[ $CARCH == "armv7h" ]] && CFLAGS+=" -fPIC"
+  #   go build with armv7h
+
+  echo "build()"
+  echo $CARCH
+
 }
 
 package() {
   cd "$srcdir/$pkgname"
-  make DESTDIR="$pkgdir" install
+  # make DESTDIR="$pkgdir" install
+  # cp program to $pkgdir
+  echo "package()"
+  echo $pkgdir
 }
