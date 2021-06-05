@@ -16,16 +16,16 @@ md5sums=('SKIP')
 
 # https://wiki.archlinux.org/title/creating_packages
 build() {
-  #cd "$srcdir/$pkgname"
+  # cd "$srcdir/$pkgname"
   echo "build()"
   pwd
   # echo $CARCH
-  python setup.py build
+  python ../setup.py build
 }
 
 package() {
-  #cd "$srcdir/$pkgname"
+  # cd "$srcdir/$pkgname"
   # echo "package()"
   # echo $pkgdir
-  python setup.py install --root="$pkgdir" --optimize=1 --skip-build
+  python ../setup.py install --root="$pkgdir" --optimize=1 --skip-build
 }
