@@ -17,7 +17,8 @@ md5sums=('SKIP')
 # https://wiki.archlinux.org/title/creating_packages
 build() {
   #cd "$srcdir/$pkgname"
-  # echo "build()"
+  echo "build()"
+  pwd
   # echo $CARCH
   python setup.py build
 }
