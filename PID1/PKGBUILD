@@ -1,7 +1,7 @@
 # Maintainer: dgnet <dgnet@dgnet.com>
 # Contributor: andriy <andriy@dgnet.cloud>
 
-pkgname=nocache
+pkgname=PID1
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="The python program to manage DGnet_Dist_PIDX repositories throug the GitHub API"
