@@ -18,8 +18,8 @@ setup(name = "PID1",
     #(If you have other packages (dirs) or modules (py files) then
     #put them into the package directory - they will be found 
     #recursively.)
-    #packages = ['PID1'],
-    packages=find_packages(),
+    packages = ['PID1'],
+    #packages=find_packages(),
     #'package' package must contain files (see list above)
     #I called the package 'package' thus cleverly confusing the whole issue...
     #This dict maps the package name =to=> directories
@@ -30,9 +30,9 @@ setup(name = "PID1",
    	# 	'pygithub'
     # ],   
     
-    install_requires=[
-        'PyGithub'
-    ],
+    # install_requires=[
+    #     'PyGithub'
+    # ],
     #Some addiional script
     #scripts = ["bin/funniest-joke"],
     long_description = """Really long text here.""" 
