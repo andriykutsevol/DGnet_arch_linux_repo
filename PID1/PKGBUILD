@@ -8,7 +8,14 @@ pkgdesc="The python program to manage DGnet_Dist_PIDX repositories throug the Gi
 arch=('any')
 url="https://github.com/andriykutsevol/DGnet_Dist_PID1.git"
 license=('')
-depends=()
+# Note: Dependencies from setup.py must be defined in the depends array otherwise they will not be installed.
+depends=("python-pygithub")
+# makedepends=('git')
+# checkdepends=('python-jaraco.envs' 'python-jaraco.path' 'python-mock' 'python-pip'
+#               'python-pytest-fixture-config' 'python-pytest-flake8' 'python-pytest-virtualenv'
+#               'python-wheel' 'python-paver' 'python-pytest-cov' 'python-sphinx')
+
+
 source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Dist_PID1.git")
 
 md5sums=('SKIP')
