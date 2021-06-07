@@ -27,7 +27,6 @@ build() {
 }
 
 package() {
-  depends=("PyGithub")
   cd "$srcdir/$pkgname"
   # python3 -m pip --version
   python3 ../../setup.py install --root="$pkgdir" --optimize=1 --skip-build
