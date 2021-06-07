@@ -26,13 +26,13 @@ setup(name = "PID1",
     #It says, package *needs* these files.
     package_data = {'PID1' : files },
  
-    setup_requires=[
-   		'pygithub'
-    ],   
+    # setup_requires=[
+   	# 	'pygithub'
+    # ],   
     
-    install_requires=[
-        'pygithub'
-    ],
+    # install_requires=[
+    #     'pygithub'
+    # ],
     #Some addiional script
     #scripts = ["bin/funniest-joke"],
     long_description = """Really long text here.""" 
