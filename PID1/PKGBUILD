@@ -5,9 +5,8 @@ pkgname=PID1
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="The python program to manage DGnet_Dist_PIDX repositories throug the GitHub API"
-# arm (armv5), armv6h (armv6 hardfloat), armv7h (armv7 hardfloat) and aarch64 (armv8 64-bit).
-arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
-url=""
+arch=('any')
+url="https://github.com/andriykutsevol/DGnet_Dist_PID1.git"
 license=('')
 depends=()
 source=("$pkgname::git+https://github.com/andriykutsevol/DGnet_Dist_PID1.git")
@@ -17,15 +16,10 @@ md5sums=('SKIP')
 # https://wiki.archlinux.org/title/creating_packages
 build() {
   cd "$srcdir/$pkgname"
-  echo "build()"
-  pwd
-  # echo $CARCH
   python ../../setup.py build
 }
 
 package() {
   cd "$srcdir/$pkgname"
-  # echo "package()"
-  # echo $pkgdir
   python ../../setup.py install --root="$pkgdir" --optimize=1 --skip-build
 }

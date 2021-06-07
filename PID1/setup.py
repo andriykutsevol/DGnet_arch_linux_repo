@@ -25,6 +25,9 @@ setup(name = "PID1",
     #This dict maps the package name =to=> directories
     #It says, package *needs* these files.
     package_data = {'PID1' : files },
+    install_requires=[
+   'PyGithub'
+    ],
     #Some addiional script
     #scripts = ["bin/funniest-joke"],
     long_description = """Really long text here.""" 
