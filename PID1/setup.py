@@ -30,9 +30,9 @@ setup(name = "PID1",
    	# 	'pygithub'
     # ],   
     
-    # install_requires=[
-    #     'pygithub'
-    # ],
+    install_requires=[
+        'PyGithub'
+    ],
     #Some addiional script
     #scripts = ["bin/funniest-joke"],
     long_description = """Really long text here.""" 
