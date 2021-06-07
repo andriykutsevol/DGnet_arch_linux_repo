@@ -16,11 +16,12 @@ md5sums=('SKIP')
 # https://wiki.archlinux.org/title/creating_packages
 build() {
   cd "$srcdir/$pkgname"
-  python ../../setup.py build
+  python3 ../../setup.py build
 }
 
 package() {
   depends=("PyGithub")
   cd "$srcdir/$pkgname"
-  python ../../setup.py install --root="$pkgdir" --optimize=1 --skip-build
+  # python3 -m pip --version
+  python3 ../../setup.py install --root="$pkgdir" --optimize=1 --skip-build
 }
