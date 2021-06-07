@@ -27,11 +27,11 @@ setup(name = "PID1",
     package_data = {'PID1' : files },
  
     setup_requires=[
-   		'PyGithub'
+   		'pygithub'
     ],   
     
     install_requires=[
-        'PyGithub'
+        'pygithub'
     ],
     #Some addiional script
     #scripts = ["bin/funniest-joke"],
