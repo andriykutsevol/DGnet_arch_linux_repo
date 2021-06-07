@@ -1,5 +1,5 @@
-from distutils.core import setup
-#from setuptools import setup, find_packages
+#from distutils.core import setup
+from setuptools import setup, find_packages
 
 #This is a list of files to install, and where
 #(relative to the 'root' dir, where setup.py is)
